@@ -1,11 +1,12 @@
 # Must have `sentry-cli` installed globally
 # Following variable must be passed in
 # SENTRY_AUTH_TOKEN
-SENTRY_ORG=testorg-az
-SENTRY_PROJECT=frontend-react
+SENTRY_ORG=airtabledemo
+SENTRY_PROJECT=javascript-react
 VERSION=`sentry-cli releases propose-version`
 PREFIX=static/js
 
+SENTRY_AUTH_TOKEN=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
 REPOSITORY=us.gcr.io/sales-engineering-sf
 COMMIT_SHA=$(shell git rev-parse HEAD)
 GCP_DEPLOY=gcloud run deploy $(shell whoami)
